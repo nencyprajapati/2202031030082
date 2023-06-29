@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript if</h2>
+
+<p>Display "Good day!" </p>
+
+<p id="demo">Good Evening!</p>
+
+<script>
+if (new Date().getHours() < 18) {
+  document.getElementById("demo").innerHTML = "Good day!";
+}
+</script>
+
+
+<p>Good morning:</p>
+
+<p id="demo"></p>
+
+<script>
+const time = new Date().getHours();
+let greeting;
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+document.getElementById("demo").innerHTML = greeting;
+</script>
+
+<p id="demo"></p>
+
+<script>
+let day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("demo").innerHTML = "Today is " + day;
+</script>
+
+<script>
+  var marks = 75;
+  var participations= true;
+  if( marks < 60 )
+  {
+  document.write("<b> Better Luck Next Time. </b>");
+  document.write("<br\> You Are Not Eligible For This Position " );
+  }
+  else
+  {
+  if (marks <= 80 && participations == true )
+  {
+  document.write("<b> Your academics and sports balance your score. You are Eligible for this position </b> ");
+  document.write("<br\> Go ahead for filling your application form. " );
+  }
+  else if(marks > 80)
+  {
+  document.write("<b> Your academics are great! You are eligible for this position. </b>");
+  document.write("<br\> Proceed further for filling the application form." );
+  }else {
+  document.write("<b> Better Luck Next Time. </b>");
+  document.write("<br\> You Are Not Eligible For This Position " );
+  }
+  }
+  </script>
+  </body>
+</html>
+  

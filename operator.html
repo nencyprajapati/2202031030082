@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Arithmetic</h1>
+<h2>The + Operator</h2>
+
+<p id="demo"></p>
+
+<script>
+let x = 7;
+let y = 8;
+let z = x + y;
+document.getElementById("demo").innerHTML = +z;
+</script>
+
+
+
+<h1>JavaScript Comparison</h1>
+<p>Assign 7 to x, and display the value of the comparison (a == 7):</p>
+
+<p id="NENCY"></p>
+
+<script>
+let a = 7;
+document.getElementById("NENCY").innerHTML = (a== 7);
+</script>
+</body>
+</html>
+
+
+
+<h1>JavaScript Assignments</h1>
+<h2>Addition Assignment</h2>
+<h3>The += Operator</h3>
+
+<p id="try"></p>
+
+<script>
+let n = 10;
+x += 5;
+document.getElementById("try").innerHTML = "Value of x is: " + n;
+</script>
+
+
+
+<h1>JavaScript Comparison</h1>
+<h2>The () ? : Ternary Operator</h2>
+
+<p>Input your age and click the button:</p>
+
+<input id="age" value="18" />
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="xyz"></p>
+
+<script>
+function myFunction() {
+  let age = document.getElementById("age").value;
+  let voteable = (age < 18) ? "Too young":"Old enough";
+  document.getElementById("xyz").innerHTML = voteable + " to vote.";
+}
+</script>
+
+
+
+
+
+<h1>JavaScript String Operators</h1>
+
+<p>All conditional operators can be used on both numbers and strings.</p>
+
+<p id="n"></p>
+
+<script>
+let text1 = "A";
+let text2 = "B";
+let result = text1 < text2;
+document.getElementById("n").innerHTML = "Is A less than B? " + result;
+</script>
